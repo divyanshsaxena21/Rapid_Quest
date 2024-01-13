@@ -49,38 +49,3 @@ function changeValue(link, value) {
     dropbtn.innerText = value;
     toggleDropdown(link.parentNode); // Hide the dropdown after selecting an option
 }
-
-
-// NAVBAR
-
-let prevScrollPos = window.scrollY;
-
-window.onscroll = function() {
-    let currentScrollPos = window.scrollY;
-    const navbar = document.getElementById("navbar");
-
-    if (prevScrollPos > currentScrollPos) {
-        // Hide the navbar when scrolling up
-        // navbar.style.top = "0";
-        navbar.classList.add("visibility");
-    } else {
-        // Hide the navbar when scrolling down
-        // navbar.style.top = "0"; // Adjust the value as needed
-        navbar.classList.add("visibility");
-    }
-
-    prevScrollPos = currentScrollPos;
-};
-
-// Optionally, you can add a function to handle scrolling stops (e.g., using a timeout)
-let scrollTimeout;
-
-window.addEventListener("scroll", function() {
-    clearTimeout(scrollTimeout);
-    const navbar = document.getElementById("navbar");
-
-    scrollTimeout = setTimeout(function() {
-        // Add logic to make the navbar visible again when scrolling stops
-        navbar.classList.remove("visibility");
-    }, 500); // Adjust the timeout value as needed
-});
