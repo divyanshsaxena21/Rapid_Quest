@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    /* transform:rotateX(-5deg) */
+}
+
+
+.butterfly{
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav-content{
+    border: none;
+    display: grid;
+}
+
+#search{
+    margin-bottom: 5rem;
+}
+
+#current{
+    padding: 2px;
+    background-color:blueviolet;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#bell{
+    padding-top: 19rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.nav{
+    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    width: 3rem;
+}
+.nav a{
+    text-align: center;
+    color: #000;
+    padding: 0.25rem;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: skyblue;
+    
+}
+
+.header-container {
+    background-color: rgba(204, 204, 204, 0.3);
+    width: 30rem;
+}
+
+.mike{
+    border-radius: 100%;
+    height: 5rem;
+    width: 4rem;
+}
+
+.about{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+header{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;    
+    display: flex;
+
+}
+
+.page-1 .content {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.account,
+.transactions {
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 18rem;
+    padding: 1rem;
+}
+.balance{
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+
+.money{
+    margin-left: 1rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.interest{
+    margin-left: 1rem;
+    display: flex;
+    gap: 2rem;
+    color: rgb(204,204,204);
+    font-weight: bold;
+    
+}
+
+.want{
+    background-color: blueviolet;
+    color: #fff;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 12rem;
+    height: 3rem;
+}
+
+
+
+.withdrawal{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#recent{
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+
+#white{
+    color: rgb(204,204,204);
+    font-weight: bold;
+
+}
+
+/* Page-2 */
+
+.page-2 {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.retirement{
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.my-goal{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.boxes{
+    display: flex;
+}
+
+#retirement-income{
+    color: blueviolet;
+}
+
+.contributions{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.goal-achieved{
+    padding: 0 2rem;
+}
+
+.rect{
+    width: 18px;
+    height: 10px;
+    border-radius: 40%;
+    position: absolute;
+    background-color: skyblue;
+}
+
+#employee{
+    padding: 0  1rem;
+}
+
+.page-2-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bar Graph */
+.chart {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1rem;
+}
+
+.peers{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#column{
+    display: flex;
+}
+h5{
+    margin-top: 3px;
+}
+
+.age{
+    margin-left: 2.5rem;
+}
+
+.salary{
+    margin-left: 1.4rem;
+}
+
+.gender{
+    margin-left: 1rem;
+}
+.retirement-strategy{
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 22rem;
+    height:17rem;
+    background-color: rgba(204,204,204,0.5);
+}
+
+/* Drop Down Button */
+.dropbtn {
+    color: #000;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the li inside the dropdown */
+.dropdown-content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ccc;
+    display: inline-block;
+    margin-left: 5px;
+}
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+#myDropdown1{
+    margin-left: 1.4rem;
+}
+
+#myDropdown2{
+    margin-left: 0.4rem;
+}
+
+/* Progress  */
+.progress-percentage{
+    display: flex;
+}
+
+.progress-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.progress-circle {
+    fill: none;
+    stroke: #4CAF50;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.progress-text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #000;
+    font-size: 24px;
+    stroke-width: 1;
+    font-weight: bold;
+    text-anchor: middle;
+    justify-content: center;
+}
+
+.prg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+/* Page 3 */
+
+.page-3{
+    width: 30rem;
+}
+input[type="range"] {
+    width: 80%;
+    margin: 20px 0;
+}
+
+#calc{
+    margin-top: 1rem;
+    text-align: center;
+    float: right;
+    width: 2rem;
+    background-color: #fff;
+}
+
+#employer-contribution h5{
+    float: right;
+    margin-top: -1.2rem;
+    font-size: 15px;
+}
+#interest-rate h5{
+    float: right;
+    margin-top: -1.2rem;
+    font-size: 15px;
+}
+.page-3-content{
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 22rem;
+    height:26rem;
+    background-color: rgba(204,204,204,0.5);
+
+}
+.update{
+    border: 1.5px solid #000;
+    background-color: blueviolet;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-size: 1.2rem;
+    height: 5rem;
+    margin-left: 15%;
+    margin-right: 10%;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+
+}
+
+#view-docs{
+    text-decoration: none;
+    margin-left: 35%;
+}
+
+
+.vertical-line {
+    position: relative;
+    margin-left: 1rem;
+}
+.vertical-line-content{
+    margin-left: 1rem;
+}
+
+.vertical-line-content #limited{
+    color:rgb(204, 204, 204)
+}
+
+.vertical-line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px; 
+    background-color: blueviolet; 
+    left: -1px;
+}
